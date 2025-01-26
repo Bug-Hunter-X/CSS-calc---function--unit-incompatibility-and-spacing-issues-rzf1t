@@ -1,0 +1,12 @@
+/* Correct usage of calc() */
+.container {
+  width: calc(100% - 20px); /* Correct: space between operator and operands */
+  height: calc(50vh - 1em); /* Correct: compatible units */
+}
+
+/* Incorrect usages:
+.container {
+  width: calc(100%-20px); /* Incorrect: missing spaces */
+  height: calc(100% - 5em); /* Incorrect:  potential incompatibility of units depending on context*/
+}
+*/
